@@ -24,17 +24,17 @@ export class ListComponent implements OnInit {
       price: 9.99,
       quantity: 2,
     },
-    {
-      id: 3,
-      name: 'Iphone X',
-      description: 'This is Iphone X',
-      image: '/assets/iphonexBlack.jpg',
-      price: 5.99,
-      quantity: 2,
-    },
   ];
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  removeProduct(productId: number): void {
+    var index = this.products.findIndex(function (product) {
+      return product.id === productId;
+    });
+
+    this.products.splice(index, 1);
+  }
 }
