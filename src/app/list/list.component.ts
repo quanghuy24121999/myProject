@@ -10,15 +10,22 @@ export class ListComponent implements OnInit {
     {
       name: 'Iphone X',
       description: 'This is Iphone X',
-      image: 'https://via.placeholder.com/200x150',
+      image: '/assets/iphonexBlack.jpg',
       price: 5.99,
       quantity: 2
     },
     {
       name: 'Iphone XS Max',
       description: 'This is Iphone XS Max',
-      image: 'https://via.placeholder.com/200x150',
+      image: '/assets/iphoneXSBlack.png',
       price: 9.99,
+      quantity: 2
+    },
+    {
+      name: 'Iphone X',
+      description: 'This is Iphone X',
+      image: '/assets/iphonexBlack.jpg',
+      price: 5.99,
       quantity: 2
     }
   ];
