@@ -1,14 +1,14 @@
 <main>
   <header class="container">
-    <app-header></app-header>
+    <app-header [numberItems]="numberItem"></app-header>
   </header>
 
   <section class="container">
-    <app-list></app-list>
+    <app-list [products]="products" (onRemoveProduct)="removeProduct($event)"></app-list>
   </section>
 
   <section class="container">
     <app-promo-code></app-promo-code>
-    <app-summary></app-summary>
+    <app-summary [subTotal]="subTotal" [total]="total"></app-summary>
   </section>
 </main>
